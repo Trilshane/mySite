@@ -1,0 +1,95 @@
+.container {
+  margin: 0 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  @media screen and (max-width: 1700px) {
+    margin: 0 150px;
+  }
+  @media screen and (max-width: 1478px) {
+    margin: 0 100px;
+  }
+  @media screen and (max-width: 1322px) {
+    margin: 0 50px;
+  }
+  @media screen and (max-width: 1242px) {
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 852px) {
+    flex-direction: column;
+    height: 100%;
+  }
+  @media screen and (max-height: 500px) {
+    height: 100%;
+  }
+
+  .paralax {
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/AboutMeTitle.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 550px;
+    transition: 0.8s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (max-width: 1478px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media screen and (max-width: 1322px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width: 852px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (max-width: 439px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .aboutMeInfo {
+    width: 40%;
+    @media screen and (max-width: 852px) {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+    .title {
+      font-weight: 100;
+      font-size: 45px;
+    }
+    .content {
+      text-align: justify;
+      @media screen and (max-width: 852px) {
+        text-align: left;
+      }
+    }
+    .resume {
+      margin-top: 35px;
+      cursor: pointer;
+      transition: ease-in-out 0.3s;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      .resumeIcon {
+        color: #77b0c7;
+      }
+      &:hover {
+        color: #77b0c7;
+        .resumeIcon {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

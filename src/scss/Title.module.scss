@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin: 0 200px;
+  height: 95vh;
+  @media screen and (max-width: 1700px) {
+    margin: 0 150px;
+  }
+  @media screen and (max-width: 1478px) {
+    margin: 0 100px;
+  }
+  @media screen and (max-width: 1322px) {
+    margin: 0 50px;
+  }
+  @media screen and (max-width: 1242px) {
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 852px) {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  @media screen and (max-height: 500px) {
+    height: 100%;
+  }
+
+  .info {
+    @media screen and (max-width: 1126px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 852px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .title {
+      font-weight: 100;
+      text-transform: uppercase;
+
+      .bold {
+        font-weight: bold;
+      }
+      @media screen and (max-width: 500px) {
+        text-align: center;
+      }
+    }
+
+    .aboutMeFirst {
+      border-top: 5px solid #ff8c78;
+      padding-top: 100px;
+      width: max-content;
+    }
+    .aboutMeContent {
+      width: 70%;
+      @media screen and (max-width: 852px) {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    .myProjectsBtn {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300;
+      width: 200px;
+      border: 1px solid #fff;
+      padding: 25px 135px 25px 25px;
+      position: relative;
+      transition: 0.6s;
+      @media screen and (max-width: 852px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 150px;
+        display: flex;
+        text-align: center;
+        padding: 25px 80px 25px 80px;
+      }
+      &::after {
+        content: "__________________________";
+        font-weight: bold;
+        color: #ff8c78;
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-85%);
+        transition: 0.6s;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+      &:hover {
+        color: #ff8c78;
+        @media screen and (max-width: 500px) {
+          background-color: #ff8c78;
+          color: #fff;
+          border-color: #ff8c78;
+        }
+        &::after {
+          right: 0;
+        }
+      }
+    }
+  }
+  .photo {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 550px;
+    background-image: url("../images/1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+    &:hover {
+      transform: scale(1.1);
+      @media screen and (max-width: 852px) {
+        transform: scale(1);
+      }
+    }
+    @media screen and (max-width: 1700px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (max-width: 1478px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media screen and (max-width: 1322px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width: 852px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (max-width: 439px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
