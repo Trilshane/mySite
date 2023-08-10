@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
@@ -22,7 +22,7 @@ const App: FC = () => {
     <>
       {!loaded && <Preloader />}
       {loaded && (
-        <BrowserRouter>
+        <HashRouter>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -31,7 +31,7 @@ const App: FC = () => {
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </HashRouter>
       )}
     </>
   );
