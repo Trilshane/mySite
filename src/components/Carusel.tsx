@@ -45,7 +45,7 @@ const Carusel: FC = () => {
     },
     {
       img: carusel5,
-      info: "Первая работа и первая комерческая работа. Сайт выполнен по дизайну заказчика. Написан с помощью JTML, CSS и JavaScript",
+      info: "Первая работа и первая комерческая работа. Сайт выполнен по дизайну заказчика. Написан с помощью HTML, CSS и JavaScript",
       link: "http://irinasudarikova.ru/",
       ghLink: "https://github.com/Trilshane/firtsSite",
     },

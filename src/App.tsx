@@ -7,6 +7,7 @@ import Works from "./pages/Works";
 import Contacts from "./pages/Contacts";
 import Preloader from "./components/Preloader";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
   const [loaded, isloaded] = useState<boolean>(false);
@@ -29,6 +30,7 @@ const App: FC = () => {
             <Route path="/works" element={<Works />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       )}
     </>
